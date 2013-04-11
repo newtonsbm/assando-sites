@@ -1,5 +1,4 @@
 <?php
-header('X-Frame-Options: GOFORIT'); 
 /**
  *
  * PHP 5
@@ -23,7 +22,7 @@ header('X-Frame-Options: GOFORIT');
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Workshop de Informática Biomédica<?php echo $title_for_layout; ?>
+		Workshop de Informática Biomédica - <?php echo $title_for_layout; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');

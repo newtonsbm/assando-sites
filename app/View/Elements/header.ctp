@@ -5,11 +5,11 @@
 			<div class="navbar-inner">
 				<div class="container">
 					<ul class="nav">
-						<li><a href="">Principal</a></li>
-						<li><a href="">Quem Somos</a></li>
+						<li><a href="<?= $this->Html->url(array('controller'=>'pages','action' => 'home')) ?>">Principal</a></li>
+						<li><a href="<?= $this->Html->url(array('controller'=>'pages','action' => 'sobre')) ?>">Sobre</a></li>
 						<li><a href="">Programação</a></li>
 						<li><a href="">Inscrição</a></li>
-						<li><a href="">Localização</a></li>
+						<li><a href="<?= $this->Html->url(array('controller'=>'pages','action' => 'como_chegar')) ?>">Como Chegar</a></li>
 						<li><a href="">Contato</a></li>
 					</ul>
 				</div>
