@@ -49,6 +49,7 @@ endif;
 ?>
 </p>
 <p>
+	<a class="btn btn-large btn-success">GOOOO</a>
 	<?php
 		if (is_writable(TMP)):
 			echo '<span class="notice success">';
