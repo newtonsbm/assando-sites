@@ -1,0 +1,9 @@
+CREATE TABLE `inscricoes`(
+	`id` INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	`nome` VARCHAR(50) NOT NULL,
+	`email` VARCHAR(100) NOT NULL,
+	`telefone` VARCHAR(10) NOT NULL,
+	`endereco` VARCHAR(100) NOT NULL,
+	`created` DATETIME,
+	`modified` DATETIME
+)

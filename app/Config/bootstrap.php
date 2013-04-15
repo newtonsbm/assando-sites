@@ -61,6 +61,24 @@ Cache::config('default', array('engine' => 'File'));
  * Inflector::rules('plural', array('rules' => array(), 'irregular' => array(), 'uninflected' => array()));
  *
  */
+Inflector::rules('singular', array(
+	'rules' => array(
+		'/^(.*)(oes|aes|aos)$/i' => '\1ao'
+	), 
+	'irregular' => array(
+		'perfis' => 'perfil',
+	), 
+	'uninflected' => array()));
+
+Inflector::rules('plural', array(
+	'rules' => array(
+		'/^(.*)ao$/i' => '\1oes'
+	), 
+	'irregular' => array(
+		'perfil' => 'perfis',
+		'pao' => 'paes',
+	), 
+	'uninflected' => array()));
 
 /**
  * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call

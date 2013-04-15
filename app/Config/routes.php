@@ -33,6 +33,7 @@
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/paginas/*', array('controller' => 'pages', 'action' => 'display'));
+	Router::connect('/quero-me-inscrever', array('controller' => 'inscricoes', 'action' => 'inscrever'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
